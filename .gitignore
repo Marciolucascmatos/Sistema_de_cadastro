@@ -1,3 +1,5 @@
 armazenador.json
 senhas.json
 README.md
+**/__pycache__/
+*.py[cod]
