@@ -16,6 +16,7 @@ class usuario:
             "email": self.email,
             "senha": self.senha
         }
+        
         if "@" not in self.email:
             messagebox.showerror("Erro", "Email inválido")
         else:
@@ -27,6 +28,7 @@ class usuario:
         else:
             with open("senhas.json", "w", encoding="utf-8") as arquivo:
                 json.dump(dados_senha, arquivo, indent=2)
+            messagebox.showinfo("Concluído", "Seu cadastro foi finalizado\n com sucesso!!!")
             
             
         
