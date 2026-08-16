@@ -23,7 +23,7 @@ senha_label.place(x = 20, y = 200)
 email_entry = tkinter.Entry(Frame_inserção, font=("Arial", 12))
 email_entry.place(x = 20, y = 150, height=35, width=250)
 
-senha_entry = tkinter.Entry(Frame_inserção, font=("Arial", 12))
+senha_entry = tkinter.Entry(Frame_inserção, font=("Arial", 12), show="•")
 senha_entry.place(x = 20, y = 250, height=35, width=250)
 
 def armzn():

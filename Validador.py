@@ -14,8 +14,8 @@ class usuario:
             pass
                        
         if len(self.senha) < 8:
-            messagebox.showerror("Erro", "Sua senha deve ter 8caracteres")
+            messagebox.showerror("Erro", "Sua senha deve ter 8 caracteres ou mais")
         else:
-            pass
-        
+            with open ("senhas.json", "w", encoding="utf-8") as arquivo:
+                pass
         
