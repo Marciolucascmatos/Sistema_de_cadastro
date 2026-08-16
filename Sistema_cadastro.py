@@ -29,6 +29,8 @@ senha_entry.place(x = 20, y = 250, height=35, width=250)
 def armzn():
     usuario_fic = usuario(email_entry.get(), senha_entry.get())
     usuario_fic.validar()
+    email_entry.delete(0, "end")
+    senha_entry.delete(0, "end")
     
 enviar = tkinter.Button(Frame_inserção, text="Enviar", font=("Arial", 20, "bold"), command=armzn)
 enviar.place(height=50, width=285, x= 5, y= 340)
