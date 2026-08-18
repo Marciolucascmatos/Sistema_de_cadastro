@@ -26,13 +26,13 @@ email_entry.place(x = 20, y = 150, height=35, width=250)
 senha_entry = tkinter.Entry(Frame_inserção, font=("Arial", 12), show="•")
 senha_entry.place(x = 20, y = 250, height=35, width=250)
 
-def armzn():
+def cadastrar():
     usuario_fic = usuario(email_entry.get(), senha_entry.get())
     usuario_fic.validar()
     email_entry.delete(0, "end")
     senha_entry.delete(0, "end")
     
-enviar = tkinter.Button(Frame_inserção, text="Enviar", font=("Arial", 20, "bold"), command=armzn)
+enviar = tkinter.Button(Frame_inserção, text="Enviar", font=("Arial", 20, "bold"), command=cadastrar)
 enviar.place(height=50, width=285, x= 5, y= 340)
 
 janela_principal.mainloop()
